@@ -2,6 +2,8 @@
 
 ## Rofi – Minimalist Note-Taking with Rofi
 
+![Rofi Notes Screenshot](./Preview/preview.png)
+
 ## 🎯 Features
 
 ✅ **Enter** → Copy a note & add if new  
