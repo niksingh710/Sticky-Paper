@@ -1,6 +1,6 @@
 #!/bin/bash
 NOTES_FILE="$HOME/.rofi_notes"
-ROFI_THEME="$HOME/.config/rofi/themes/notes.rasi"
+ROFI_THEME="${ROFI_THEME:-$HOME/.config/rofi/themes/notes.rasi}"
 [ -f "$NOTES_FILE" ] || touch "$NOTES_FILE"
 NOTES=$(cat "$NOTES_FILE")
 CHOSEN=$(echo "$NOTES" | rofi -dmenu -p "Importants " -theme "$ROFI_THEME" \
