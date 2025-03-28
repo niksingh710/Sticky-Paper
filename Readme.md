@@ -6,9 +6,9 @@
 
 ## 🎯 Features
 
-✅ **Enter** → Copy a note & add if new  
-✅ **Ctrl+X** → Copy & delete note  
-✅ **Custom Rofi theme & fonts**  
+✅ **Enter** → Copy a note & add if new
+✅ **Ctrl+X** → Copy & delete note
+✅ **Custom Rofi theme & fonts**
 ✅ **Minimal dependencies** – Rofi & `wl-clipboard`
 
 ## ⚙ Installation
@@ -23,6 +23,26 @@ Run with
 
 ```
 $ sticky-paper
+```
+
+### Nix
+
+##### Quick Run without installation
+```bash
+nix run github:ashish-kus/sticky-paper
+```
+
+##### Installation
+```bash
+# Add the flake in your flake.nix inputs
+inputs = {
+    sticky-paper.url = "github:ashish-kus/sticky-paper";
+};
+
+# Add sticky-paper to your systemPackages
+environment.systemPackages = [
+    inputs.sticky-paper.packages.${pkgs.system}.default
+];
 ```
 
 Hyprland Keybind:
